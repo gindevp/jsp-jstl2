@@ -14,6 +14,8 @@
 </head>
 <body>
 <table class="table" style="box-shadow: aqua">
+
+    <h1 style="text-align: center">Danh sách khách hàng</h1>
     <tr>
         <thead>
         <th>ten</th>
@@ -25,10 +27,10 @@
     <c:forEach var="list" items="${list}">
         <tbody>
         <tr>
-            <td>${list.name}</td>
-            <td>${list.dateBith}</td>
-            <td>${list.address}</td>
-            <td><img src="${list.url}" style=" height:100px ; width: 100px"></td>
+            <td>${list.getName()}</td>
+            <td>${list.getDateBith()}</td>
+            <td>${list.getAddress()}</td>
+            <td><img src="${list.getUrl()}" style=" height:100px ; width: 100px"></td>
         </tr>
         </tbody>
     </c:forEach>
